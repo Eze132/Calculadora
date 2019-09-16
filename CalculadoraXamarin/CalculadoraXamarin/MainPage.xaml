@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CalculadoraXamarin"
+             x:Class="CalculadoraXamarin.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Calculadora"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+        <Entry x:Name="entryNumero"/>
+
+
+        <StackLayout Orientation="Horizontal">
+            
+            <Button Text="1"
+             x:Name="buttonUm"/>
+            
+            <Button Text="2"
+             x:Name="buttonDois"/>
+           
+            <Button Text="3"
+             x:Name="buttonTres"/>
+            
+            <Button Text="+"
+            x:Name="buttonSoma"
+            Clicked="ButtonSoma_Clicked"></Button>
+        
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            
+            <Button Text="4"
+             x:Name="buttonQuatro"/>
+            
+            <Button Text="5"
+             x:Name="buttonCinco"/>
+            
+            <Button Text="6"
+             x:Name="buttonSeis"/>
+            
+            <Button Text="x"
+             x:Name="buttonMultiplicar"
+             Clicked="ButtonMultiplicar_Clicked"></Button>
+        
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+        
+            <Button Text="7"
+             x:Name="buttonSete"/>
+            
+            <Button Text="8"
+             x:Name="buttonOito"/>
+            
+            <Button Text="9"
+             x:Name="buttonNove"/>
+            
+            <Button Text="-"
+             x:Name="buttonSubtrair"
+             Clicked="ButtonSubtrair_Clicked"></Button>
+        
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+        
+            <Button Text="0"
+             x:Name="buttonZero"/>
+            
+            <Button Text="CE"
+             x:Name="buttonApagar"
+             Clicked="ButtonApagar_Clicked"></Button>
+            
+            <Button Text="="
+             x:Name="buttonIgual"
+             Clicked="ButtonIgual_Clicked"></Button>
+            
+            <Button Text="/"
+             x:Name="buttonDividir"
+             Clicked="ButtonDividir_Clicked"></Button>
+        
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
