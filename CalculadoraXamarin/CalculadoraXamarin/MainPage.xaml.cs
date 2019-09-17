@@ -14,34 +14,82 @@ namespace CalculadoraXamarin
             InitializeComponent();
         }
 
+        public double n1 = 0;
+        public double n2 = 0;
+        
+        public string operacao;
+
         private void ButtonSoma_Clicked(object sender, EventArgs e)
         {
+            
+            
+           
+           n1 = Convert.ToDouble(entryNumero.Text);
+           operacao = "Soma";
+           entryNumero.Text = "";
+
 
         }
 
         private void ButtonMultiplicar_Clicked(object sender, EventArgs e)
         {
 
+            n1 = Convert.ToDouble(entryNumero.Text);
+            operacao = "Multiplicar";
+            entryNumero.Text = "";
         }
 
         private void ButtonSubtrair_Clicked(object sender, EventArgs e)
         {
-
+            n1 = Convert.ToDouble(entryNumero.Text);
+            operacao = "Subtrair";
+            entryNumero.Text = "";
         }
 
         private void ButtonApagar_Clicked(object sender, EventArgs e)
         {
-
+            entryNumero.Text = "";
+            n1 = 0;
+            n2 = 0;
+            operacao = "";
         }
 
         private void ButtonIgual_Clicked(object sender, EventArgs e)
         {
+            Contas c = new Contas();
+            switch (operacao)
+            {
+                case "Soma":
+                    c.Soma(n1,n2);
+                    entryNumero.Text = Convert.ToString(n2);
+                    break;
 
+
+                case "Subtrair":
+                    c.Subtrair(n1,n2);
+                    entryNumero.Text = Convert.ToString(n2);
+                    break;
+
+
+                case "Multiplicar":
+                    c.Multiplicar(n1,n2);
+                    entryNumero.Text = Convert.ToString(n2);
+                    break;
+
+
+                case "Dividir":
+                    c.Dividir(n1,n2);
+                    entryNumero.Text = Convert.ToString(n2);
+                    break;
+
+            }
         }
 
         private void ButtonDividir_Clicked(object sender, EventArgs e)
         {
-
+            n1 = Convert.ToDouble(entryNumero.Text);
+            operacao = "Dividir";
+            entryNumero.Text = "";
         }
 
         private void ButtonUm_Clicked(object sender, EventArgs e)

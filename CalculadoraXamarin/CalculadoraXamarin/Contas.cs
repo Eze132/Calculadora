@@ -6,23 +6,27 @@ namespace CalculadoraXamarin
 {
     class Contas
     {
-        public void Soma(int n1, int n2)
+        
+
+        public void Soma(double n1, double n2)
         {
-         n1 =  n1 + n2;
+          n2 =  n1 + n2;
         }
 
-        public void Subtrair(int n1, int n2)
+        public void Subtrair(double n1, double n2)
         {
-            n1 = n1 - n2;
+           n2 = n1 - n2;
         }
-        public void Multiplicar(int n1, int n2)
+        public void Multiplicar(double n1, double n2)
         {
-            n1 = n1 + n2;
+            n2 = n1 + n2;
         }
 
-        public void Dividir(int n1, int n2)
+        public void Dividir(double n1, double n2)
         {
-            n1 = n1 + n2;
+            n2 = n1 + n2;
         }
+
+       
     }
 }
