@@ -13,15 +13,18 @@
 
 
         <StackLayout Orientation="Horizontal">
-            
+
             <Button Text="1"
-             x:Name="buttonUm"/>
-            
+             x:Name="buttonUm"
+             Clicked="ButtonUm_Clicked"></Button>
+
             <Button Text="2"
-             x:Name="buttonDois"/>
-           
+             x:Name="buttonDois"
+             Clicked="ButtonDois_Clicked"></Button>
+
             <Button Text="3"
-             x:Name="buttonTres"/>
+             x:Name="buttonTres"
+             Clicked="ButtonTres_Clicked"></Button>
             
             <Button Text="+"
             x:Name="buttonSoma"
@@ -30,15 +33,18 @@
         </StackLayout>
 
         <StackLayout Orientation="Horizontal">
-            
+
             <Button Text="4"
-             x:Name="buttonQuatro"/>
-            
+             x:Name="buttonQuatro"
+             Clicked="ButtonQuatro_Clicked"></Button>
+
             <Button Text="5"
-             x:Name="buttonCinco"/>
-            
+             x:Name="buttonCinco"
+             Clicked="ButtonCinco_Clicked"></Button>
+
             <Button Text="6"
-             x:Name="buttonSeis"/>
+             x:Name="buttonSeis"
+             Clicked="ButtonSeis_Clicked"></Button>
             
             <Button Text="x"
              x:Name="buttonMultiplicar"
@@ -47,15 +53,18 @@
         </StackLayout>
 
         <StackLayout Orientation="Horizontal">
-        
+
             <Button Text="7"
-             x:Name="buttonSete"/>
-            
+             x:Name="buttonSete"
+             Clicked="ButtonSete_Clicked"></Button>
+
             <Button Text="8"
-             x:Name="buttonOito"/>
-            
+             x:Name="buttonOito"
+             Clicked="ButtonOito_Clicked"></Button>
+
             <Button Text="9"
-             x:Name="buttonNove"/>
+             x:Name="buttonNove"
+             Clicked="ButtonNove_Clicked"></Button>
             
             <Button Text="-"
              x:Name="buttonSubtrair"
@@ -64,9 +73,10 @@
         </StackLayout>
 
         <StackLayout Orientation="Horizontal">
-        
+
             <Button Text="0"
-             x:Name="buttonZero"/>
+             x:Name="buttonZero"
+             Clicked="ButtonZero_Clicked"></Button>
             
             <Button Text="CE"
              x:Name="buttonApagar"
