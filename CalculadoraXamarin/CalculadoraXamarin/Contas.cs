@@ -8,23 +8,24 @@ namespace CalculadoraXamarin
     {
         
 
-        public void Soma(double n1, double n2)
+        public double Soma(double n1, double n2)
         {
-          n2 =  n1 + n2;
+            return  (n1 + n2);
+            
         }
 
-        public void Subtrair(double n1, double n2)
+        public double Subtrair(double n1, double n2)
         {
-           n2 = n1 - n2;
+            return  (n1 - n2);
         }
-        public void Multiplicar(double n1, double n2)
+        public double Multiplicar(double n1, double n2)
         {
-            n2 = n1 + n2;
+            return  (n1 * n2);
         }
 
-        public void Dividir(double n1, double n2)
+        public double Dividir(double n1, double n2)
         {
-            n2 = n1 + n2;
+            return  (n1 / n2);
         }
 
        

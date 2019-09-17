@@ -4,30 +4,46 @@
              xmlns:local="clr-namespace:CalculadoraXamarin"
              x:Class="CalculadoraXamarin.MainPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="Gray">
         <!-- Place new controls here -->
         <Label Text="Calculadora"
+               FontSize="30"
+               TextColor="Orange"
                HorizontalOptions="Center"
                VerticalOptions="Start"/>
-        <Entry x:Name="entryNumero"/>
+        
+        <Entry x:Name="entryNumero"
+               FontSize="25"/>
 
 
         <StackLayout Orientation="Horizontal">
 
             <Button Text="1"
+             TextColor="Black"       
              x:Name="buttonUm"
+             FontSize="25"
+             BackgroundColor="Cornsilk"
              Clicked="ButtonUm_Clicked"></Button>
 
             <Button Text="2"
+             TextColor="Black"       
              x:Name="buttonDois"
+             FontSize="25"
+             BackgroundColor="Cornsilk"       
              Clicked="ButtonDois_Clicked"></Button>
 
             <Button Text="3"
+             TextColor="Black"       
              x:Name="buttonTres"
+             FontSize="25"
+             BackgroundColor="Cornsilk"       
              Clicked="ButtonTres_Clicked"></Button>
             
             <Button Text="+"
+            TextColor="Red"       
             x:Name="buttonSoma"
+            FontSize="30"
+            BackgroundColor="Orange"        
             Clicked="ButtonSoma_Clicked"></Button>
         
         </StackLayout>
@@ -35,19 +51,31 @@
         <StackLayout Orientation="Horizontal">
 
             <Button Text="4"
+             TextColor="Black"       
              x:Name="buttonQuatro"
+             FontSize="25"
+             BackgroundColor="Cornsilk"       
              Clicked="ButtonQuatro_Clicked"></Button>
 
             <Button Text="5"
+             TextColor="Black"       
              x:Name="buttonCinco"
+             FontSize="25"
+             BackgroundColor="Cornsilk"
              Clicked="ButtonCinco_Clicked"></Button>
 
             <Button Text="6"
+             TextColor="Black"       
              x:Name="buttonSeis"
+             FontSize="25"
+             BackgroundColor="Cornsilk"       
              Clicked="ButtonSeis_Clicked"></Button>
             
             <Button Text="x"
+             TextColor="Red"
              x:Name="buttonMultiplicar"
+             FontSize="30"
+             BackgroundColor="Orange"       
              Clicked="ButtonMultiplicar_Clicked"></Button>
         
         </StackLayout>
@@ -55,19 +83,31 @@
         <StackLayout Orientation="Horizontal">
 
             <Button Text="7"
+             TextColor="Black"       
              x:Name="buttonSete"
+             FontSize="25"
+             BackgroundColor="Cornsilk"
              Clicked="ButtonSete_Clicked"></Button>
 
             <Button Text="8"
+             TextColor="Black"       
              x:Name="buttonOito"
+             FontSize="25"
+             BackgroundColor="Cornsilk"       
              Clicked="ButtonOito_Clicked"></Button>
 
             <Button Text="9"
+             TextColor="Black"       
              x:Name="buttonNove"
+             FontSize="25"
+             BackgroundColor="Cornsilk"       
              Clicked="ButtonNove_Clicked"></Button>
             
             <Button Text="-"
+             TextColor="Red"       
              x:Name="buttonSubtrair"
+             FontSize="30"
+             BackgroundColor="Orange"       
              Clicked="ButtonSubtrair_Clicked"></Button>
         
         </StackLayout>
@@ -75,19 +115,31 @@
         <StackLayout Orientation="Horizontal">
 
             <Button Text="0"
+             TextColor="Black"       
              x:Name="buttonZero"
+             FontSize="25"
+             BackgroundColor="Cornsilk"       
              Clicked="ButtonZero_Clicked"></Button>
             
             <Button Text="CE"
+             TextColor="Red"       
              x:Name="buttonApagar"
+             FontSize="30"
+             BackgroundColor="Orange"       
              Clicked="ButtonApagar_Clicked"></Button>
             
             <Button Text="="
+             TextColor="Red"       
              x:Name="buttonIgual"
+             FontSize="30"
+             BackgroundColor="Orange"         
              Clicked="ButtonIgual_Clicked"></Button>
             
             <Button Text="/"
+             TextColor="Red"       
              x:Name="buttonDividir"
+             FontSize="30"
+             BackgroundColor="Orange"         
              Clicked="ButtonDividir_Clicked"></Button>
         
         </StackLayout>

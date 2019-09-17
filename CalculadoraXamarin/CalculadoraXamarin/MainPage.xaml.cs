@@ -16,18 +16,16 @@ namespace CalculadoraXamarin
 
         public double n1 = 0;
         public double n2 = 0;
+        public double resultado;
         
         public string operacao;
 
         private void ButtonSoma_Clicked(object sender, EventArgs e)
         {
             
-            
-           
            n1 = Convert.ToDouble(entryNumero.Text);
            operacao = "Soma";
            entryNumero.Text = "";
-
 
         }
 
@@ -60,26 +58,30 @@ namespace CalculadoraXamarin
             switch (operacao)
             {
                 case "Soma":
-                    c.Soma(n1,n2);
-                    entryNumero.Text = Convert.ToString(n2);
+                    n2 = Convert.ToDouble(entryNumero.Text);
+                    resultado = c.Soma(n1,n2);
+                    entryNumero.Text = Convert.ToString(resultado);
                     break;
 
 
                 case "Subtrair":
-                    c.Subtrair(n1,n2);
-                    entryNumero.Text = Convert.ToString(n2);
+                    n2 = Convert.ToDouble(entryNumero.Text);
+                    resultado = c.Subtrair(n1,n2);
+                    entryNumero.Text = Convert.ToString(resultado);
                     break;
 
 
                 case "Multiplicar":
-                    c.Multiplicar(n1,n2);
-                    entryNumero.Text = Convert.ToString(n2);
+                    n2 = Convert.ToDouble(entryNumero.Text);
+                    resultado = c.Multiplicar(n1,n2);
+                    entryNumero.Text = Convert.ToString(resultado);
                     break;
 
 
                 case "Dividir":
-                    c.Dividir(n1,n2);
-                    entryNumero.Text = Convert.ToString(n2);
+                    n2 = Convert.ToDouble(entryNumero.Text);
+                    resultado = c.Dividir(n1,n2);
+                    entryNumero.Text = Convert.ToString(resultado);
                     break;
 
             }
@@ -94,52 +96,52 @@ namespace CalculadoraXamarin
 
         private void ButtonUm_Clicked(object sender, EventArgs e)
         {
-            entryNumero.Text = Convert.ToString(1);
+            entryNumero.Text += Convert.ToString(1);
         }
 
         private void ButtonDois_Clicked(object sender, EventArgs e)
         {
-            entryNumero.Text = Convert.ToString(2);
+            entryNumero.Text += Convert.ToString(2);
         }
 
         private void ButtonTres_Clicked(object sender, EventArgs e)
         {
-            entryNumero.Text = Convert.ToString(3);
+            entryNumero.Text += Convert.ToString(3);
         }
 
         private void ButtonQuatro_Clicked(object sender, EventArgs e)
         {
-            entryNumero.Text = Convert.ToString(4);
+            entryNumero.Text += Convert.ToString(4);
         }
 
         private void ButtonCinco_Clicked(object sender, EventArgs e)
         {
-            entryNumero.Text = Convert.ToString(5);
+            entryNumero.Text += Convert.ToString(5);
         }
 
         private void ButtonSeis_Clicked(object sender, EventArgs e)
         {
-            entryNumero.Text = Convert.ToString(6);
+            entryNumero.Text += Convert.ToString(6);
         }
 
         private void ButtonSete_Clicked(object sender, EventArgs e)
         {
-            entryNumero.Text = Convert.ToString(7);
+            entryNumero.Text += Convert.ToString(7);
         }
 
         private void ButtonOito_Clicked(object sender, EventArgs e)
         {
-            entryNumero.Text = Convert.ToString(8);
+            entryNumero.Text += Convert.ToString(8);
         }
 
         private void ButtonNove_Clicked(object sender, EventArgs e)
         {
-            entryNumero.Text = Convert.ToString(9);
+            entryNumero.Text += Convert.ToString(9);
         }
 
         private void ButtonZero_Clicked(object sender, EventArgs e)
         {
-            entryNumero.Text = Convert.ToString(0);
+            entryNumero.Text += Convert.ToString(0);
         }
     }
 }
