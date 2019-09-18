@@ -14,11 +14,10 @@ namespace CalculadoraXamarin
             InitializeComponent();
         }
 
-        public double n1 = 0;
-        public double n2 = 0;
-        public double resultado;
-        
-        public string operacao;
+        private double n1 = 0;
+        private double n2 = 0;
+        private double resultado;
+        private string operacao;
 
         private void ButtonSoma_Clicked(object sender, EventArgs e)
         {
@@ -55,33 +54,34 @@ namespace CalculadoraXamarin
         private void ButtonIgual_Clicked(object sender, EventArgs e)
         {
             Contas c = new Contas();
+            n2 = Convert.ToDouble(entryNumero.Text);
             switch (operacao)
             {
                 case "Soma":
-                    n2 = Convert.ToDouble(entryNumero.Text);
                     resultado = c.Soma(n1,n2);
-                    entryNumero.Text = Convert.ToString(resultado);
+                    entryNumero.Text = resultado.ToString();
                     break;
 
 
                 case "Subtrair":
-                    n2 = Convert.ToDouble(entryNumero.Text);
                     resultado = c.Subtrair(n1,n2);
                     entryNumero.Text = Convert.ToString(resultado);
                     break;
 
 
                 case "Multiplicar":
-                    n2 = Convert.ToDouble(entryNumero.Text);
                     resultado = c.Multiplicar(n1,n2);
                     entryNumero.Text = Convert.ToString(resultado);
                     break;
 
 
                 case "Dividir":
-                    n2 = Convert.ToDouble(entryNumero.Text);
                     resultado = c.Dividir(n1,n2);
                     entryNumero.Text = Convert.ToString(resultado);
+                    break;
+
+                default:
+                    DisplayAlert("Ops...","HOUVE UM ERRO!\n TENTE NOVAMENTE","OK");
                     break;
 
             }
